@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(280deg,blue, hotpink);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.main-cont{
+    width: 400px;
+    height:550px;
+    box-shadow: 0px 0px 10px #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 30px;
+    max-height: 600px;
+    overflow-y: hidden;
+    background: #fff;
+    position: relative;
+}
+
+.main-cont::-webkit-scrollbar{
+    display: none;
+}
+
+.header{
+    position: relative;
+}
+.header .top-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    /* border-bottom: 3px solid #cccc; */
+}
+.head .mui .text{
+    text-align: start;
+    padding: 0px;
+}
+.head .mui .text h4{
+    font-weight: 700;
+}
+.head .mui .text h1{
+    font-weight: 300;
+    color: #5858eb;
+}
+.head .mui .floating-btn{
+    font-size: 25px;
+}
+
+.footer{
+    position: absolute;
+    bottom:0px;
+    left:0px;
+    width: 100%;
+    background: #000;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding:10px;
+}
+.form .inp{
+    width: 100%;
+    height: 45px;
+    border-radius:0px;
+    margin: 5px;
+    font-size: 20px;
+}
+.form .todo-btn{
+    height: 45px;
+    width: 95px;
+    border-radius:0px;
+    border: none;
+    outline: none;
+    margin: 5px;
+    font-size: 15px;
+
+}
+
+.content-body{
+    width: 100%;
+    /* height: auto; */
+    max-height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 0px;
+}
+.content-body::-webkit-scrollbar{
+    width: 5px;
+}
+
+.content-body::-webkit-scrollbar-thumb{
+    background: #ccc;
+}
+
+.content-body .task-cont{
+    width: 100%;
+    padding: 5px;
+    /* border-bottom: 3px solid #ccc; */
+    background: #eeeded;
+    margin: 3px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.content-body .task-cont.done{
+    border-left: 5px solid green;
+    text-decoration: line-through;
+}
